@@ -48,3 +48,12 @@ footer p { margin: 0; }
   body { font-size: 17px; }
   .page { padding: 2rem 1.1rem 2.5rem; }
 }
+
+/* entries */
+.item { margin: 0 0 1.8rem; }
+.item h3 { font: 600 1.08rem/1.35 "Geist", system-ui, sans-serif; color: var(--strong); margin: 0 0 0.15rem; }
+.item p { margin: 0 0 0.5rem; }
+.item .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.45rem; }
+.item .more { font-size: 0.95rem; display: flex; flex-wrap: wrap; gap: 0.3rem 1.1rem; }
+.badge { display: inline-block; vertical-align: 0.12em; margin-left: 0.35rem; padding: 0.05rem 0.5rem; border-radius: 999px;
+  font-size: 0.74rem; font-weight: 600; letter-spacing: 0.02em; color: #fdf6e3; background: var(--gold); }
