@@ -1,0 +1,50 @@
+/* Solarized: https://ethanschoonover.com/solarized/ */
+:root, [data-theme="light"] {
+  --bg: #fdf6e3;      /* base3 */
+  --bg-alt: #eee8d5;  /* base2 */
+  --text: #586e75;    /* base01 */
+  --strong: #073642;  /* base02 */
+  --muted: #657b83;   /* base00 */
+  --rule: #e4dcc3;
+  --accent: #268bd2;  /* blue */
+  --gold: #b58900;    /* yellow */
+  color-scheme: light;
+}
+[data-theme="dark"] {
+  --bg: #002b36;
+  --bg-alt: #073642;
+  --text: #93a1a1;
+  --strong: #eee8d5;
+  --muted: #839496;
+  --rule: #0d4452;
+  --accent: #58a6e8;
+  --gold: #d1a21b;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 400 17.5px/1.7 "Geist", "Segoe UI", system-ui, sans-serif; }
+::selection { background: var(--bg-alt); color: var(--strong); }
+a { color: var(--accent); text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+strong { color: var(--strong); font-weight: 600; }
+
+.page { max-width: 48rem; margin: 0 auto; padding: 3.5rem 1.5rem 3rem; }
+
+.top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.6rem; font-size: 0.9rem; color: var(--muted); }
+.theme { font: inherit; color: var(--muted); background: none; border: 1px solid var(--rule); border-radius: 999px; padding: 0.25rem 0.8rem; cursor: pointer; }
+.theme:hover { color: var(--strong); border-color: var(--muted); }
+
+h1 { font: 400 clamp(2.7rem, 7.5vw, 4.2rem)/1.02 "Instrument Serif", Georgia, serif; color: var(--strong); margin: 0 0 1.1rem; letter-spacing: -0.01em; }
+.intro { font-size: 1.1rem; margin: 0 0 1.2rem; max-width: 40rem; }
+.links { display: flex; gap: 1.2rem; margin: 0; font-weight: 500; }
+
+h2 { font: 400 1.9rem/1.15 "Instrument Serif", Georgia, serif; color: var(--strong); margin: 3.2rem 0 1rem; padding-top: 1.1rem; border-top: 1px solid var(--rule); }
+
+footer { margin-top: 4rem; font-size: 0.88rem; color: var(--muted); }
+footer p { margin: 0; }
+
+@media (max-width: 600px) {
+  body { font-size: 17px; }
+  .page { padding: 2rem 1.1rem 2.5rem; }
+}
